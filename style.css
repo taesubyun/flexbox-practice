@@ -1,0 +1,66 @@
+.body,
+html {
+  height: 100%;
+}
+/* 여기선 html에 heigth : 100%를 줘야 한다는게 KEYPOINT  -> 전체 */
+
+.container {
+  background: beige;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* flex-flow : coulumn nowrap */
+  justify-content: flex;
+  /*   align-items: center; */
+  align-content: center;
+}
+/* vh -> veiw point */
+/* LINE 13. < flew-flow : column nowrap > : flew-direction과 flex-wrap을 한번에!*/
+/* flex-wrap : nowrap(기본값) / warp으로 하면 크기를 줄이면 다음 줄로 넘어가 */
+/* flex-direction : row(기본값) / row-direction , column , column-direction */
+/* justify-content : flex(기본값) : 중심축에서 아이템을 어떻게 배치하느냐 
+                   : + flex-end, center, space-around, space-evenly, space-between */
+
+.item {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+}
+
+.item1 {
+  background: #ef9a9a;
+  /* order: 1; */
+  /* 순서를 바꿔줘 */
+  /* flex-grow: 1; */
+  /* 이거 대박 */
+  flex-shrink: 1;
+  /* 컨테이너가작아질때 더, 덜 줄어드느냐 */
+  /* align-self: center; */
+  /* 줄에서 얘만 다른 곳에 뺄 수 있어 */
+}
+.item2 {
+  background: #f48fb1;
+  /* order: 2; */
+  flex-shrink: 1;
+}
+.item3 {
+  background: #ce93d8;
+  /* order: 3; */
+  flex-shrink: 1;
+}
+.item4 {
+  background: #b39ddb;
+}
+.item5 {
+  background: #90caf9;
+}
+.item6 {
+  background: #a5d6a7;
+}
+.item7 {
+  background: #e6ee9c;
+}
+.item8 {
+  background: #f9a8;
+}
